@@ -128,7 +128,7 @@ export default function About() {
           </div>
 
           {/* ── Right: Floating overlapping images ── */}
-          <div className="relative h-[500px] lg:h-[600px] hidden lg:block">
+          <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] mt-12 lg:mt-0 w-full block">
             {floatingImages.map((img, i) => (
               <FloatingElement
                 key={img.alt}
@@ -137,27 +137,28 @@ export default function About() {
                 delay={i * 0.7}
                 className="absolute"
                 style={{
-                  top: `${10 + i * 15}%`,
-                  left: `${5 + i * 20}%`,
+                  top: `${5 + i * 15}%`,
+                  left: `${i * 15}%`,
                   zIndex: 3 - i,
+                  width: i === 1 ? '60%' : '50%',
+                  maxWidth: i === 1 ? '280px' : '240px',
                 }}
               >
                 <motion.div style={{ x: imgTransforms[i].x, y: imgTransforms[i].y }}>
                   <div
-                    className="glass-panel overflow-hidden"
+                    className="glass-panel overflow-hidden w-full"
                     style={{
-                      width: i === 1 ? 280 : 240,
                       boxShadow: '0 20px 60px rgba(0,0,0,0.4)',
                     }}
                   >
                     <img
                       src={img.src}
                       alt={img.alt}
-                      className="w-full h-56 object-cover"
+                      className="w-full h-40 sm:h-48 lg:h-56 object-cover"
                       loading="lazy"
                     />
-                    <div className="p-3">
-                      <p className="text-xs text-text-muted">{img.alt}</p>
+                    <div className="p-2 lg:p-3">
+                      <p className="text-[10px] lg:text-xs text-text-muted">{img.alt}</p>
                     </div>
                   </div>
                 </motion.div>
