@@ -122,7 +122,7 @@ export default function LoadingScreen({ onComplete }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
-              <span className="loading-logo-name">CHULANGA</span>
+              <span className="loading-logo-name">PASINDU</span>
               <span className="loading-logo-dot">.</span>
             </motion.div>
 

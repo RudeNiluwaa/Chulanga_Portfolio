@@ -60,9 +60,10 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '100px' }}
           transition={{ type: 'spring', stiffness: 50, damping: 20, delay: 0.3 }}
+          className="flex flex-col items-center gap-8"
         >
           <MagneticButton
-            href="mailto:hello@chulanga.design"
+            href="mailto:Psp167216@gmail.com"
             strength={0.5}
             className="px-16 py-6 rounded-full text-xl md:text-2xl font-display font-bold tracking-wide"
             style={{
@@ -75,6 +76,16 @@ export default function Footer() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </MagneticButton>
+          
+          <div className="flex flex-col md:flex-row gap-4 text-text-secondary body-md">
+            <a href="mailto:Psp167216@gmail.com" className="hover:text-neon-purple transition-colors duration-200 no-underline">
+              Psp167216@gmail.com
+            </a>
+            <span className="hidden md:inline">•</span>
+            <a href="tel:0712723608" className="hover:text-neon-purple transition-colors duration-200 no-underline">
+              0712723608
+            </a>
+          </div>
         </motion.div>
 
         {/* Bottom credits */}
@@ -86,7 +97,7 @@ export default function Footer() {
           transition={{ delay: 0.5, duration: 0.8 }}
         >
           <p className="body-sm">
-            © {new Date().getFullYear()} Chulanga. All rights reserved.
+            © {new Date().getFullYear()} Pasindu Withanage. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {['Dribbble', 'Behance', 'Instagram', 'LinkedIn'].map((social) => (

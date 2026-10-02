@@ -13,7 +13,7 @@
   <rect width="512" height="512" rx="120" fill="#0a0a0a" />
   
   <!-- Outer Glow -->
-  <path d="M 360 160 A 130 130 0 1 0 360 352" 
+  <path d="M 190 400 V 120 H 270 A 90 90 0 0 1 360 210 A 90 90 0 0 1 270 300 H 190" 
         fill="none" 
         stroke="url(#c-gradient)" 
         stroke-width="70" 
@@ -21,8 +21,8 @@
         filter="url(#glow)"
         opacity="0.5"/>
         
-  <!-- Main Letter C -->
-  <path d="M 360 160 A 130 130 0 1 0 360 352" 
+  <!-- Main Letter P -->
+  <path d="M 190 400 V 120 H 270 A 90 90 0 0 1 360 210 A 90 90 0 0 1 270 300 H 190" 
         fill="none" 
         stroke="url(#c-gradient)" 
         stroke-width="70" 

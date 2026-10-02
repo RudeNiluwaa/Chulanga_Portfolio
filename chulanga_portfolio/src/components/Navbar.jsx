@@ -41,7 +41,7 @@ export default function Navbar() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
         >
-          CHULANGA
+          PASINDU
           <span className="text-neon-purple">.</span>
         </motion.a>
 

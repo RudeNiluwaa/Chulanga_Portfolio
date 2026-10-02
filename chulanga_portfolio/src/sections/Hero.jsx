@@ -154,7 +154,7 @@ export default function Hero() {
                 />
                 <img
                   src="/chulanga-profile.jpeg"
-                  alt="Chulanga - Graphic Designer"
+                  alt="Pasindu Withanage - Graphic Designer"
                   className="relative w-72 md:w-96 rounded-3xl object-cover border border-white/10"
                   style={{
                     aspectRatio: '0.85',
