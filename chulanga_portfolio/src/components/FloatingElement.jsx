@@ -11,7 +11,7 @@ export default function FloatingElement({
   return (
     <motion.div
       className={className}
-      style={style}
+      style={{ ...style, willChange: 'transform' }}
       animate={{
         y: [0, -amplitude, 0],
       }}

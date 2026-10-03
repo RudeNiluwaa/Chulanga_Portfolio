@@ -70,6 +70,7 @@ body {
   border-radius: 50%;
   pointer-events: none;
   filter: blur(80px);
+  will-change: transform;
 }
 
 .glow-blue {
@@ -80,6 +81,24 @@ body {
   border-radius: 50%;
   pointer-events: none;
   filter: blur(80px);
+  will-change: transform;
+}
+
+@media (max-width: 768px) {
+  .glow-purple,
+  .glow-blue {
+    display: none;
+  }
+  
+  .glass-panel {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .glass-panel-strong {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
 }
 
 /* ─── CURSOR GLOW ───────────────────────────────────────── */

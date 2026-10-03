@@ -12,7 +12,7 @@ export default function ParallaxLayer({
     <motion.div
       ref={ref}
       className={`pointer-events-none ${className}`}
-      style={{ y }}
+      style={{ y, willChange: 'transform' }}
     >
       {children}
     </motion.div>

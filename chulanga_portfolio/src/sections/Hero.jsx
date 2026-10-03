@@ -144,7 +144,7 @@ export default function Hero() {
               >
                 {/* Glow behind image */}
                 <div
-                  className="absolute inset-0 rounded-3xl"
+                  className="absolute inset-0 rounded-3xl hidden md:block"
                   style={{
                     background:
                       'radial-gradient(ellipse at center, rgba(168, 85, 247, 0.2) 0%, transparent 70%)',

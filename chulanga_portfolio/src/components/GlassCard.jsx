@@ -71,7 +71,6 @@ export default function GlassCard({
       animate={{
         opacity: dimmed ? 0.35 : 1,
         scale: dimmed ? 0.97 : 1,
-        filter: dimmed ? 'blur(1px)' : 'blur(0px)',
       }}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
