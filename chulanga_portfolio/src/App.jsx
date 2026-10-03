@@ -12,6 +12,7 @@ import Footer from './sections/Footer';
 import { CursorProvider } from './components/CustomCursor';
 import InfiniteMarquee from './components/InfiniteMarquee';
 import { useLenis } from './hooks/useLenis';
+import WhatsAppButton from './components/WhatsAppButton';
 
 /* ── Page reveal animation (plays once after loading screen) ── */
 const pageVariants = {
@@ -65,6 +66,7 @@ export default function App() {
           >
             <CursorProvider>
               <Navbar />
+              <WhatsAppButton />
               <main>
                 <SectionTransition>
                   <Hero />
